@@ -12,6 +12,7 @@ import { EmpleadoModule } from './empleado/empleado.module';
 import { AdministradorModule } from './administrador/administrador.module';
 import { IndicadoresModule } from './indicadores/indicadores.module';
 import { CategoriasModule } from './categorias/categorias.module';
+import { DepartamentosModule } from './departamentos/departamentos.module';
 
 @Module({
   imports: [TypeOrmModule.forRoot({
@@ -31,7 +32,7 @@ import { CategoriasModule } from './categorias/categorias.module';
     CardsModule, 
     FamiliaresModule, 
     EmpleadoModule, 
-    AdministradorModule, IndicadoresModule, CategoriasModule,
+    AdministradorModule, IndicadoresModule, CategoriasModule, DepartamentosModule,
   ],
   controllers: [AppController],
   providers: [AppService],
